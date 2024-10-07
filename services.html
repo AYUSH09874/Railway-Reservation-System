@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Services</title>
+    <style>
+      .header {
+        grid-area: header;
+      }
+      .main {
+        grid-area: main;
+        width: 605px;
+      }
+      .right {
+        grid-area: right;
+        width: 500px;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header header"
+          "main main main right right"
+          "footer footer footer footer footer";
+      }
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      body {
+        background-color: #ffffff;
+      }
+      .topnav li {
+        list-style: none;
+        float: left;
+      }
+      .topnav li a {
+        text-decoration: none;
+        padding: 17px;
+        color: black;
+        font-size: 23px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 498;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffe8e8;
+        border-radius: 80px;
+      }
+      .topnav li a:hover {
+        background-color: #f0c36d;
+        border-radius: 100px;
+        padding-top: 10px;
+      }
+      #headservice {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgb(38 55 31);
+        background-color: #b6b61457;
+        text-align: center;
+        border-radius: 17px;
+        width: 100%;
+      }
+      img {
+        border-radius: 20px;
+      }
+      .container {
+        width: 260px;
+        margin-top: 10px;
+        margin: 10px;
+        text-align: center;
+      }
+      .card {
+        background-color: #ff9675;
+        padding: 20px;
+        border-radius: 18px;
+      }
+      .stitle {
+        color: rgb(0, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+      }
+      #servicescard1 {
+        margin-top: 80px;
+        display: flex;
+        row-gap: 10px;
+      }
+      #servicescard2 {
+        display: flex;
+      }
+      button {
+        margin-top: 10px;
+        border-radius: 17px;
+        background-color: green;
+        color: white;
+        border: 0px;
+      }
+      button:hover {
+        background-color: rgb(162, 157, 157);
+        background-color: rgb(19, 141, 94);
+        cursor: pointer;
+      }
+      footer {
+        background-color: #ffe8e8;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <header>
+          <a href="index.html"
+            ><img
+              src="..\images\railway.gif"
+              alt="logo"
+              height="65"
+              width="300"
+              class="logo"
+          /></a>
+          <nav class="topnav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="meal.html">Meals</a></li>
+              <li><a href="holiday.html">Holiday</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="main">
+        <h1 id="headservice">Our Services For Passengers</h1>
+        <img src="..\images\services1.webp" alt="Our services" width="100%" />
+      </div>
+      <div class="right">
+        <div id="servicescard1">
+          <div class="container">
+            <div class="card">
+              <h3 class="stitle">PNR Status</h3>
+              <p>To check PNR Status. Click on this button.</p>
+              <button
+                onclick="location.href='https://www.indianrail.gov.in/enquiry/PNR/PnrEnquiry.html?locale=en'"
+              >
+                Check PNR
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h3 class="stitle">E-Catering</h3>
+              <p>Click on this button for more information.</p>
+              <button
+                onclick="location.href='https://ecatering.irctc.co.in/eCatering/'"
+              >
+                E-catering
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="servicescard2">
+          <div class="container">
+            <div class="card">
+              <h3 class="stitle">Ticket Booking</h3>
+              <p>To book Ticket Online. Click on this button.</p>
+              <button onclick="location.href='index.html#ticket'">
+                Book Ticket
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h3 class="stitle">Holiday Package</h3>
+              <p>For Holiday Package. Click on this button.</p>
+              <button onclick="location.href='index.html#holiday'">
+                View Package
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <footer>
+          <p>
+            Copyright © 2017, Centre For Railway Information Systems, Designed
+            and Hosted by CRIS
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
