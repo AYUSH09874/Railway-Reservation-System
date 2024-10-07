@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Holiday Packages</title>
+    <style>
+      .grid-container {
+        display: grid;
+        background-color: blanchedalmond;
+        grid-template-areas:
+          "header header header header header header"
+          "main main main right right right"
+          "footer footer footer footer footer footer";
+      }
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .header {
+        grid-area: header;
+      }
+      .main {
+        grid-area: main;
+      }
+      .right {
+        grid-area: right;
+      }
+      .footer {
+        grid-area: footer;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      .topnav li {
+        list-style: none;
+        float: left;
+      }
+      .topnav li a {
+        text-decoration: none;
+        padding: 17px;
+        color: black;
+        font-size: 23px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 498;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffe8e8;
+        border-radius: 80px;
+      }
+      .topnav li a:hover {
+        background-color: #f0c36d;
+        border-radius: 100px;
+        padding-top: 10px;
+      }
+      #holidayimg1 {
+        width: 95%;
+        height: 400px;
+        border-radius: 17px;
+      }
+      #holidayimg2 {
+        width: 95%;
+        height: 400px;
+        border-radius: 17px;
+      }
+      #holidayimg3 {
+        width: 95%;
+        height: 400px;
+        border-radius: 17px;
+      }
+      .holidaycontainer {
+        margin-top: 120px;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .htitle {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: rgb(38 55 31);
+        background-color: #b6b61457;
+        text-align: center;
+        border-radius: 17px;
+        width: 96%;
+      }
+      .container {
+        background-color: rgb(183, 214, 214);
+        width: 70%;
+        height: 130px;
+        margin-left: 60px;
+        padding: 2px;
+        margin-top: 30px;
+        border-radius: 27px;
+      }
+      button {
+        border-radius: 17px;
+        border: 0px;
+        background-color: green;
+        color: white;
+      }
+      button:hover {
+        background-color: rgb(45, 177, 104);
+        color: rgb(37, 55, 37);
+        cursor: pointer;
+      }
+      h3 {
+        font-family: monospace;
+        font-size: 20px;
+      }
+      footer {
+        background-color: #ffe8e8;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="header">
+        <div class="header">
+          <header>
+            <a href="index.html"
+              ><img
+                src="..\images\railway.gif"
+                alt="logo"
+                height="65"
+                width="300"
+                class="logo"
+            /></a>
+            <nav class="topnav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="meal.html">Meals</a></li>
+                <li><a href="holiday.html">Holiday</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <!-- Main begin -->
+      <div class="main">
+        <h1 class="htitle">Tourist Train</h1>
+        <img
+          id="holidayimg1"
+          src="..\images\touristtrain1.jpg"
+          alt="Tourist Train"
+        />
+        <div class="holidaycontainer">
+          <div class="container">
+            <div class="card">
+              <h3>Domestic Packages</h3>
+              <p>We also provide Domestic Tour. Click here to book now.</p>
+              <button
+                onclick="location.href='https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=Domestic&sector=All'"
+              >
+                Book here
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h3>International Packages</h3>
+              <p>We also provide International Tour. Click here to book now.</p>
+              <button
+                onclick="location.href='https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=International&sector=All'"
+              >
+                Book Here
+              </button>
+            </div>
+          </div>
+        </div>
+        <h1 class="htitle">Stays</h1>
+        <img id="holidayimg2" src="..\images\hotel.jpg" alt="Hotel" />
+      </div>
+      <!-- Main End -->
+      <div class="right">
+        <div class="holidaycontainer">
+          <div class="container">
+            <div class="card">
+              <h3>Bharat Gaurav</h3>
+              <p>Bharat Gaurav is a Tourist Train. Click here to book now.</p>
+              <button
+                onclick="location.href='https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=Domestic&sector=All&bdar=3'"
+              >
+                Book Here
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h3>Golden Chariot</h3>
+              <p>Golden Chariot is a Tourist Train. Click here to book now.</p>
+              <button onclick="location.href='https://www.goldenchariot.org/'">
+                Book Here
+              </button>
+            </div>
+          </div>
+        </div>
+        <h1 class="htitle">Tour Package</h1>
+        <img
+          id="holidayimg3"
+          src="..\images\internationalimg.jpeg"
+          alt="International"
+        />
+        <div class="holidaycontainer">
+          <div class="container">
+            <div class="card">
+              <h3>Retiring Room</h3>
+              <p>We also provide Retiring Room. Click here to book now.</p>
+              <button
+                onclick="location.href='https://www.rr.irctctourism.com/#/home'"
+              >
+                Book here
+              </button>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <h3>Lounge</h3>
+              <p>We also provide Lounge. Click here to book now.</p>
+              <button
+                onclick="location.href='https://www.irctctourism.com/accommodation'"
+              >
+                Book Here
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <footer>
+          <p>
+            Copyright © 2017, Centre For Railway Information Systems, Designed
+            and Hosted by CRIS
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
