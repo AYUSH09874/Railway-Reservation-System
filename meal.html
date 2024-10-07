@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meals</title>
+    <style>
+      .topnav li {
+        list-style: none;
+        float: left;
+      }
+      .topnav li a {
+        text-decoration: none;
+        padding: 17px;
+        color: black;
+        font-size: 23px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 498;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ffe8e8;
+        border-radius: 80px;
+        margin-bottom: 5px;
+        height: 69px;
+      }
+      .topnav li a:hover {
+        background-color: #f0c36d;
+        border-radius: 100px;
+        padding-top: 10px;
+      }
+      .container {
+        background-image: url("..\\images\\food.jpg");
+        background-repeat: no-repeat;
+        position: sticky;
+        background-size: cover;
+        padding: 20px;
+      }
+      .head {
+        text-align: center;
+        margin: 40px auto;
+        color: wheat;
+        background-color: rgba(0, 0, 0, 0.768);
+        padding: 15px;
+        width: 60%;
+        border-radius: 18px;
+      }
+      .down {
+        display: grid;
+        grid-template-areas: "header header";
+        color: wheat;
+      }
+
+      .down > div {
+        background-color: rgba(0, 0, 0, 0.326);
+        height: 200px;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 18px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .food {
+        width: 400px;
+      }
+      .ecat {
+        margin-left: 100px;
+        width: 400px;
+      }
+      p {
+        margin-top: 10px;
+      }
+      .order {
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        width: 80px;
+        background-color: antiquewhite;
+      }
+      .order:hover {
+        background-color: rgba(0, 0, 0, 0.636);
+        color: white;
+        cursor: pointer;
+      }
+      footer {
+        background-color: #ffe8e8;
+        padding-top: 1px;
+        padding-bottom: 10px;
+        margin-top: 2px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <a href="index.html"
+          ><img
+            src="..\images\railway.gif"
+            alt="logo"
+            height="65"
+            width="300"
+            class="logo"
+        /></a>
+        <nav class="topnav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meal.html">Meals</a></li>
+            <li><a href="holiday.html">Holiday</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="container">
+      <div class="head">
+        <h1>Get Restaurant food delivered right at your seat.</h1>
+      </div>
+      <div class="down">
+        <div class="ecat">
+          <h3>Order Food - E-Catering</h3>
+          <hr />
+          <p>
+            With multiple food aggregators on train stations travelers can now
+            enjoy an extensive set of meals ranging from north Indian, South
+            Indian, Pizzas to your seats.
+          </p>
+          <button
+            class="order"
+            onclick="location.href='https://www.ecatering.irctc.co.in/'"
+          >
+            Order
+          </button>
+        </div>
+        <div class="food">
+          <h3>Cooked Food Menu</h3>
+          <hr />
+          <p>
+            Order Online Cheap Veg and Non-veg Food on Running Train & Enjoy
+            Journey. Grab The Best Offers on Food in Train Food Delivery by Our
+            Travel and Rail Khana.
+          </p>
+          <button
+            class="order"
+            onclick="location.href='https://menurates.irctc.co.in/'"
+          >
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <footer>
+        <p>
+          Copyright © 2017, Centre For Railway Information Systems, Designed and
+          Hosted by CRIS
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
